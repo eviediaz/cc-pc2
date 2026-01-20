@@ -44,6 +44,7 @@ B2_READ_APPLICATION_KEY = "tu_application_key_lectura"
 B2_WRITE_KEY_ID = "tu_key_id_escritura"
 B2_WRITE_APPLICATION_KEY = "tu_application_key_escritura"
 B2_BUCKET_NAME = "nombre_de_tu_bucket"
+```
 
 ### ⚙️ Configuración de MongoDB Atlas
 
@@ -64,8 +65,9 @@ Para que la búsqueda vectorial funcione correctamente, es necesario configurar 
     }
   ]
 }
+```
 
-Nota: El nombre del índice debe coincidir exactamente con vector_index tal como está definido en el código.
+> Nota: El nombre del índice debe coincidir exactamente con vector_index tal como está definido en el código.
 
 ## 🛠️ Instalación y Preparación
 
@@ -73,12 +75,14 @@ Sigue estos pasos para configurar el entorno de desarrollo y ejecutar la aplicac
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/eviediaz/cc-pc2](https://github.com/eviediaz/cc-pc2)
+   git clone https://github.com/eviediaz/cc-pc2
    cd cc-pc2
+   ```
 
 2. **Instalar dependencias:**
    ```bash
    pip install -r requirements.txt
+   ```
 
 3. **Configurar secretos de Streamlit:**
    Crea la carpeta .streamlit y dentro el archivo secrets.toml con la configuración mencionada previamente.
@@ -87,6 +91,7 @@ Sigue estos pasos para configurar el entorno de desarrollo y ejecutar la aplicac
    Una vez configuradas las credenciales, se debe iniciar el servidor de Streamlit:
    ```bash
    streamlit run app.py
+   ```
 
 ## 🔄 Flujo de Datos del Proyecto
 
